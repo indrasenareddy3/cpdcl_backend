@@ -14,9 +14,9 @@ app.include_router(reading.router)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # or ["*"] for testing
+    allow_origins=["*"],  
     allow_credentials=True,
-    allow_methods=["*"],   # IMPORTANT: includes OPTIONS
+    allow_methods=["*"],   
     allow_headers=["*"],
 )
 
