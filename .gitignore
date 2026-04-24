@@ -1,0 +1,90 @@
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env/
+.env.*
+
+# ------------------------------
+# Environment Variables (IMPORTANT)
+# ------------------------------
+.env
+.env.*
+!.env.example   # keep example config
+
+# ------------------------------
+# IDE / Editor
+# ------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ------------------------------
+# OS Files
+# ------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Logs
+# ------------------------------
+*.log
+logs/
+
+# ------------------------------
+# Alembic (Migration files)
+# ------------------------------
+# ⚠️ Keep versions (IMPORTANT for production)
+# DO NOT ignore versions folder
+alembic/versions/*.pyc
+alembic/versions/__pycache__/
+
+# ------------------------------
+# Database
+# ------------------------------
+*.sqlite3
+*.db
+
+# ------------------------------
+# Docker
+# ------------------------------
+docker-compose.override.yml
+
+# ------------------------------
+# AWS / Secrets
+# ------------------------------
+*.pem
+*.key
+*.crt
+
+# ------------------------------
+# Build / Distribution
+# ------------------------------
+build/
+dist/
+*.egg-info/
+
+# ------------------------------
+# Testing / Coverage
+# ------------------------------
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ------------------------------
+# Static / Media (optional)
+# ------------------------------
+media/
+uploads/
+
+# ------------------------------
+# Misc
+# ------------------------------
+*.bak
+*.tmp
