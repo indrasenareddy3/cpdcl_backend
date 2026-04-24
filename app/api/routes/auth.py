@@ -18,11 +18,11 @@ def login_api(data: LoginRequest, db: Session = Depends(get_db)):
 def logout():
     try:
         return {
-            "success": True,
+            "status": True,
             "message": "Logout successful"
         }
     except Exception:
         return {
-            "success": False,
+            "status": False,
             "message": "Logout failed"
         }
