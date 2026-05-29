@@ -6,6 +6,7 @@ class ReadingCreate(BaseModel):
     rdng_img: str
     transaction_id: str
     mr_id: str
+    consumer_id: str
     date: datetime
     geo_lat: float
     geo_long: float
@@ -16,6 +17,7 @@ class ReadingResponse(BaseModel):
     rdng_img: str
     transaction_id: str
     mr_id: str
+    consumer_id: str
     date: datetime
     geo_lat: float
     geo_long: float

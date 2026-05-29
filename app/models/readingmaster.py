@@ -11,6 +11,8 @@ class Reading(Base):
     mr_id = Column(String, ForeignKey("mr_registration.mr_id"))
     date = Column(DateTime)
 
+    consumer_id = Column(String(100), index=True)
+
     geo_lat = Column(Float)   # DOUBLE PRECISION
     geo_long = Column(Float) 
 

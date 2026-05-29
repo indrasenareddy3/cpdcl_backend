@@ -9,6 +9,7 @@ def add_reading(db, data):
             rdng_img=data.rdng_img,
             transaction_id=data.transaction_id,
             mr_id=data.mr_id,
+            consumer_id=data.consumer_id,
             date=data.date,
             geo_lat=data.geo_lat,
             geo_long=data.geo_long
