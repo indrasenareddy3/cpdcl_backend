@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.api.routes import auth, reading
+from app.api.routes import auth, reading, mr
 from fastapi.middleware.cors import CORSMiddleware
 
 from mangum import Mangum
@@ -8,6 +8,7 @@ app = FastAPI()
 
 app.include_router(auth.router)
 app.include_router(reading.router)
+app.include_router(mr.router)
 
 
 
